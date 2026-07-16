@@ -37,9 +37,11 @@ nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-f
 .case-card-foot{display:flex;justify-content:space-between;align-items:baseline;gap:10px;border-top:1px solid var(--line);padding-top:13px}.summary{font-size:12px;font-weight:800}.case-more{font-size:12px;color:var(--muted);white-space:nowrap}
 .modal-overlay{position:fixed;inset:0;background:rgba(23,23,23,.66);z-index:100;display:none;align-items:flex-start;justify-content:center;padding:40px 20px;overflow:hidden}.modal-overlay.open{display:flex}
 .modal-card{background:#fff;max-width:720px;width:100%;max-height:calc(100vh - 80px);border-radius:var(--r);overflow:hidden;overflow-y:auto;box-shadow:var(--sh-lg)}
-.modal-head{background:var(--deep);padding:20px 24px;display:flex;justify-content:space-between;align-items:flex-start;gap:14px;position:sticky;top:0;z-index:2;flex-wrap:wrap}
+.modal-head{background:var(--deep);padding:20px 64px 20px 24px;display:flex;justify-content:space-between;align-items:flex-start;gap:14px;position:sticky;top:0;z-index:2;flex-wrap:wrap}
 .modal-head .case-no{color:rgba(255,255,255,.55);margin-bottom:8px;font-size:11.5px;font-weight:800;letter-spacing:.07em}.modal-head h2{font-size:18px;font-weight:800;color:#fff;line-height:1.5}
 .modal-nav{display:flex;gap:8px}.modal-nav button{width:32px;height:32px;border:1px solid rgba(255,255,255,.2);border-radius:50%;background:rgba(255,255,255,.12);color:#fff;cursor:pointer;font-size:14px;transition:background .15s;display:flex;align-items:center;justify-content:center}.modal-nav button:hover{background:rgba(255,255,255,.25)}.modal-body{padding:28px 30px 36px}
+.modal-close{position:absolute;top:16px;right:20px;width:32px;height:32px;border:1px solid rgba(255,255,255,.2);border-radius:50%;background:rgba(255,255,255,.12);color:#fff;cursor:pointer;font-size:14px;transition:background .15s;display:flex;align-items:center;justify-content:center;z-index:3}
+.modal-close:hover{background:rgba(255,255,255,.25)}
 .case-tags{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:16px}.case-tag{font-size:11px;font-weight:800;color:var(--deep);background:var(--charcoal-a);border:none;padding:4px 12px;border-radius:100px}
 .case-role{font-size:12.8px;color:var(--sub);background:var(--soft);border-left:3px solid var(--deep);padding:11px 15px;margin-bottom:18px;line-height:1.7;border-radius:0 6px 6px 0}
 .case-block{margin-bottom:22px}.case-block h4{font-size:11px;font-weight:800;letter-spacing:.12em;color:var(--muted);margin-bottom:10px}.case-block>p{font-size:13.8px;color:var(--sub);line-height:1.85}
@@ -112,7 +114,7 @@ footer{border-top:1px solid var(--line);padding:42px 0}.footer-inner{display:fle
 </div></section>
 
 <div class="modal-overlay" id="m1" onclick="closeOnOverlay(event,'m1')"><div class="modal-card">
-  <div class="modal-head"><div><div class="case-no">CASE 01 / 04</div><h2>400여 제휴사의 상이한 예약·취소·위약 정책을 공통 운영 기준으로 표준화</h2></div><div class="modal-nav"><button onclick="goTo('m1','m4')">←</button><button onclick="goTo('m1','m2')">→</button><button onclick="closeModal('m1')">✕</button></div></div>
+  <div class="modal-head"><div><div class="case-no">CASE 01 / 04</div><h2>400여 제휴사의 상이한 예약·취소·위약 정책을 공통 운영 기준으로 표준화</h2></div><div class="modal-nav"><button onclick="goTo('m1','m4')">←</button><button onclick="goTo('m1','m2')">→</button></div><button class="modal-close" onclick="closeModal('m1')">✕</button></div>
   <div class="modal-body">
     <div class="case-tags"><span class="case-tag">예약 운영</span><span class="case-tag">제휴 골프장</span><span class="case-tag">정책 표준화</span><span class="case-tag">변경 관리</span></div>
     <div class="case-role"><b>내 역할</b> · 400여 곳 어드민 전수 점검 · 공통 속성·조회 순서 정의 · 골프장 예약실 건별 확인 · 누락 정책 보완 · FAQ·온보딩 업데이트 · 예약 문의 운영</div>
@@ -129,7 +131,7 @@ footer{border-top:1px solid var(--line);padding:42px 0}.footer-inner{display:fle
 </div></div>
 
 <div class="modal-overlay" id="m2" onclick="closeOnOverlay(event,'m2')"><div class="modal-card">
-  <div class="modal-head"><div><div class="case-no">CASE 02 / 04</div><h2>3PL 전환 초기 4,789건의 이슈와 데이터 공백을 진단해 임시 운영·시스템 개선·자동화로 연결</h2></div><div class="modal-nav"><button onclick="goTo('m2','m1')">←</button><button onclick="goTo('m2','m3')">→</button><button onclick="closeModal('m2')">✕</button></div></div>
+  <div class="modal-head"><div><div class="case-no">CASE 02 / 04</div><h2>3PL 전환 초기 4,789건의 이슈와 데이터 공백을 진단해 임시 운영·시스템 개선·자동화로 연결</h2></div><div class="modal-nav"><button onclick="goTo('m2','m1')">←</button><button onclick="goTo('m2','m3')">→</button></div><button class="modal-close" onclick="closeModal('m2')">✕</button></div>
   <div class="modal-body">
     <div class="case-tags"><span class="case-tag">3PL 전환</span><span class="case-tag">데이터 공백</span><span class="case-tag">임시 운영</span><span class="case-tag">자동화</span></div>
     <div class="case-role"><b>내 역할</b> · 초기 상황 확인 · 처리 기준 확정 · 이슈 수치화·유형화 · 데이터 공백 정의 · 리소스·일정 산정 · 임시 운영·CRM 개선 · 자동화 · 계약 기반 월별 피해 정산</div>
@@ -148,7 +150,7 @@ footer{border-top:1px solid var(--line);padding:42px 0}.footer-inner{display:fle
 </div></div>
 
 <div class="modal-overlay" id="m3" onclick="closeOnOverlay(event,'m3')"><div class="modal-card">
-  <div class="modal-head"><div><div class="case-no">CASE 03 / 04</div><h2>지원 인력과 매장이 담당자에 따라 다르게 판단하지 않도록 운영 기준·검수·안내 체계 정착</h2></div><div class="modal-nav"><button onclick="goTo('m3','m2')">←</button><button onclick="goTo('m3','m4')">→</button><button onclick="closeModal('m3')">✕</button></div></div>
+  <div class="modal-head"><div><div class="case-no">CASE 03 / 04</div><h2>지원 인력과 매장이 담당자에 따라 다르게 판단하지 않도록 운영 기준·검수·안내 체계 정착</h2></div><div class="modal-nav"><button onclick="goTo('m3','m2')">←</button><button onclick="goTo('m3','m4')">→</button></div><button class="modal-close" onclick="closeModal('m3')">✕</button></div>
   <div class="modal-body">
     <div class="case-tags"><span class="case-tag">운영 기준</span><span class="case-tag">답변 검수</span><span class="case-tag">에스컬레이션</span><span class="case-tag">온보딩</span></div>
     <div class="case-role"><b>내 역할</b> · 문의 유형·처리 범위 정리 · 검수·에스컬레이션 기준 문서화 · FAQ·SOP·매크로 정비 · 온보딩 자료 제작 · 답변 검수·피드백 운영</div>
@@ -166,7 +168,7 @@ footer{border-top:1px solid var(--line);padding:42px 0}.footer-inner{display:fle
 </div></div>
 
 <div class="modal-overlay" id="m4" onclick="closeOnOverlay(event,'m4')"><div class="modal-card">
-  <div class="modal-head"><div><div class="case-no">CASE 04 / 04</div><h2>반복 문의를 주문·재고·화면 상태와 비교해 서비스 구조 문제로 정의하고 당일 개선</h2></div><div class="modal-nav"><button onclick="goTo('m4','m3')">←</button><button onclick="goTo('m4','m1')">→</button><button onclick="closeModal('m4')">✕</button></div></div>
+  <div class="modal-head"><div><div class="case-no">CASE 04 / 04</div><h2>반복 문의를 주문·재고·화면 상태와 비교해 서비스 구조 문제로 정의하고 당일 개선</h2></div><div class="modal-nav"><button onclick="goTo('m4','m3')">←</button><button onclick="goTo('m4','m1')">→</button></div><button class="modal-close" onclick="closeModal('m4')">✕</button></div>
   <div class="modal-body">
     <div class="case-tags"><span class="case-tag">VOC 패턴</span><span class="case-tag">운영 데이터</span><span class="case-tag">개발 협업</span><span class="case-tag">서비스 개선</span></div>
     <div class="case-role"><b>내 역할</b> · 신규 상품 등록 직후 이상 문의 포착 · 문의·주문·재고·화면 비교 · 공통 발생 조건 정의 · 최소 개선안 제안 · 개발 협의 · 반영 후 문의 추이 확인</div>
