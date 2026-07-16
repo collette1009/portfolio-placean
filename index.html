@@ -36,7 +36,7 @@ nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.96);backdrop-f
 .case-card h3{font-size:16px;font-weight:800;line-height:1.5;margin:2px 0 12px}.case-card .blurb{font-size:12.8px;color:var(--sub);line-height:1.75;margin-bottom:16px;flex:1}
 .case-card-foot{display:flex;justify-content:space-between;align-items:baseline;gap:10px;border-top:1px solid var(--line);padding-top:13px}.summary{font-size:12px;font-weight:800}.case-more{font-size:12px;color:var(--muted);white-space:nowrap}
 .modal-overlay{position:fixed;inset:0;background:rgba(23,23,23,.66);z-index:100;display:none;align-items:flex-start;justify-content:center;padding:40px 20px;overflow:hidden}.modal-overlay.open{display:flex}
-.modal-card{background:#fff;max-width:720px;width:100%;overflow-y:auto;max-height:calc(100vh - 80px);border-radius:var(--r);overflow:hidden;box-shadow:var(--sh-lg)}
+.modal-card{background:#fff;max-width:720px;width:100%;max-height:calc(100vh - 80px);border-radius:var(--r);overflow:hidden;overflow-y:auto;box-shadow:var(--sh-lg)}
 .modal-head{background:var(--deep);padding:20px 24px;display:flex;justify-content:space-between;align-items:flex-start;gap:14px;position:sticky;top:0;z-index:2;flex-wrap:wrap}
 .modal-head .case-no{color:rgba(255,255,255,.55);margin-bottom:8px;font-size:11.5px;font-weight:800;letter-spacing:.07em}.modal-head h2{font-size:18px;font-weight:800;color:#fff;line-height:1.5}
 .modal-nav{display:flex;gap:8px}.modal-nav button{width:32px;height:32px;border:1px solid rgba(255,255,255,.2);border-radius:50%;background:rgba(255,255,255,.12);color:#fff;cursor:pointer;font-size:14px;transition:background .15s;display:flex;align-items:center;justify-content:center}.modal-nav button:hover{background:rgba(255,255,255,.25)}.modal-body{padding:28px 30px 36px}
@@ -139,7 +139,7 @@ footer{border-top:1px solid var(--line);padding:42px 0}.footer-inner{display:fle
       <div class="step"><div class="step-badge">B</div><div class="step-body"><h5>후속 업무를 막는 데이터 공백 정의</h5>미출 리스트 미공유, 송장번호 미연결, 회원코드 미노출이 고객 안내·배송조회·보상 자료·재배송 처리에 미치는 영향을 정리해 관련 부서에 공유했습니다.</div></div>
       <div class="step"><div class="step-badge">C</div><div class="step-body"><h5>시스템 정상화 전 임시 운영</h5>송장 연결이 정상화되기 전에는 3PL 파트너의 운송장 파일을 가공해 배송조회 링크를 생성하고 개별 상태를 확인했습니다.</div></div>
       <div class="step"><div class="step-badge">D</div><div class="step-body"><h5>CRM 개선</h5>보상 대상 자료 가공 시 주문별 조회가 필요했던 문제를 공유하고, CRM 출고리스트에서 회원코드를 직접 확인하도록 개선을 요청해 반영을 확인했습니다.</div></div>
-      <div class="step"><div class="step-badge">E</div><div class="step-body"><h5>대량 처리 자동화</h5>Chrome Extension·Apps Script로 재배송 등록을 6→2단계로 단축해 재배송 1,151건을 처리하고, 잔여 취소 대상과 처리 일정을 다시 산정했습니다. 이후 반품 등록은 7→1단계로 단축해 상시 적용했습니다.</div></div>
+      <div class="step"><div class="step-badge">E</div><div class="step-body"><h5>대량 처리 자동화</h5>Chrome Extension·Apps Script로 재배송·반품 등록 처리 단계를 7→1단계로 단축해, 전환 초기 재배송 1,151건을 처리하고 잔여 취소 대상과 처리 일정을 다시 산정했습니다. 이후 이 자동화를 반품 등록 전 건에 상시 적용했습니다.</div></div>
       <div class="step"><div class="step-badge">F</div><div class="step-body"><h5>반복 관리 지표 분리</h5>전환 초기 4,789건 진단과 별도로 월별 피해현황을 반복 관리 지표로 집계하고, 파트너 이의제기는 사유명이 아니라 실제 발생 원인·보유 사진·계약 책임 기준으로 건별 재검토했습니다.</div></div>
     </div>
     <div class="case-block"><h4>결과</h4><div class="result-box"><p>전환 초기 이슈 규모와 유형을 수치로 확인할 수 있게 했고, 시스템이 완전히 정상화되기 전에도 고객 안내와 후속 처리가 멈추지 않는 임시 운영방안을 마련했습니다. CRM 출고리스트에서 회원코드를 직접 확인할 수 있도록 개선했으며, 재배송 1,151건을 처리하고 이후 월별 피해현황을 같은 기준으로 추적할 수 있는 구조로 연결했습니다.</p></div></div>
