@@ -92,9 +92,9 @@ footer{border-top:1px solid var(--line);padding:42px 0}.footer-inner{display:fle
 <section id="cases"><div class="wrap">
   <h2 class="sec-title">운영 기준과 반복 이슈를 실행 구조로 바꾼 사례</h2>
   <div class="case-grid">
-    <button class="case-card" onclick="openModal('m1')"><div class="case-num">01</div><div class="case-tags-mini"><span>파트너 정책</span><span>변경 관리</span></div><h3>고객 문의마다 건별 확인하던 400여 제휴사 정책을 재사용 가능한 운영 기준으로 전환</h3><p class="blurb">예약·취소·위약 문의를 직접 처리하며 건별로 골프장 예약실에 확인했고, 반복 확인 정보를 공통 속성·조회 순서·변경 관리 기준으로 구조화했습니다.</p><div class="case-card-foot"><span class="summary">400여 파트너 · 건별 확인 → 재사용 가능한 운영 기준</span><span class="case-more">자세히 보기 →</span></div></button>
+    <button class="case-card" onclick="openModal('m1')"><div class="case-num">01</div><div class="case-tags-mini"><span>파트너 정책</span><span>변경 관리</span></div><h3>400여 제휴사의 상이한 예약·취소·위약 정책을 공통 운영 기준으로 표준화</h3><p class="blurb">예약 문의 처리 과정에서 반복적으로 확인하던 골프장별 운영 조건을 공통 속성·조회 순서·변경 관리 기준으로 구조화했습니다.</p><div class="case-card-foot"><span class="summary">400여 파트너 · 건별 확인 → 재사용 가능한 운영 기준</span><span class="case-more">자세히 보기 →</span></div></button>
     <button class="case-card" onclick="openModal('m2')"><div class="case-num">02</div><div class="case-tags-mini"><span>도입·안착</span><span>데이터 공백</span></div><h3>3PL 전환 초기 4,789건의 이슈와 데이터 공백을 진단해 임시 운영·시스템 개선·자동화로 연결</h3><p class="blurb">전환 초기 개별 문의로 흩어진 출고 이슈를 유형화하고, 미출 리스트·송장번호·회원코드가 후속 업무와 연결되지 않는 구간을 찾아 시스템 정상화 전 임시 운영방안과 장기 개선을 병행했습니다.</p><div class="case-card-foot"><span class="summary">4,789건 초기 진단 · 재배송 1,151건 · CRM·임시 조회 개선</span><span class="case-more">자세히 보기 →</span></div></button>
-    <button class="case-card" onclick="openModal('m3')"><div class="case-num">03</div><div class="case-tags-mini"><span>운영 기준</span><span>실행 품질</span></div><h3>지원 인력과 매장이 담당자에 따라 다르게 판단하지 않도록 운영 기준·검수·안내 체계 정착</h3><p class="blurb">CS 경험이 없는 지원 인력이 순차 투입되는 상황에서 문의 유형별 확인 항목, 처리 가능 범위, 답변 구조와 이관 기준을 정리하고 실제 답변 검수·피드백을 운영했습니다.</p><div class="case-card-foot"><span class="summary">응대 3.1→1.7분 · 매크로 10→62% · 온보딩 10→4~5일</span><span class="case-more">자세히 보기 →</span></div></button>
+    <button class="case-card" onclick="openModal('m3')"><div class="case-num">03</div><div class="case-tags-mini"><span>운영 기준</span><span>실행 품질</span></div><h3>지원 인력과 매장이 담당자에 따라 다르게 판단하지 않도록 운영 기준·검수·안내 체계 정착</h3><p class="blurb">CS 경험이 없는 지원 인력이 순차 투입되는 상황에서 문의 유형별 확인 항목, 처리 가능 범위, 답변 구조와 이관 기준을 정리하고 실제 답변 검수·피드백을 운영했습니다.</p><div class="case-card-foot"><span class="summary">평균 처리시간 3.1→1.7분 · 매크로 10→62% · 온보딩 10→4~5일</span><span class="case-more">자세히 보기 →</span></div></button>
     <button class="case-card" onclick="openModal('m4')"><div class="case-num">04</div><div class="case-tags-mini"><span>VOC 분석</span><span>서비스 개선</span></div><h3>반복 문의를 주문·재고·화면 상태와 비교해 서비스 구조 문제로 정의하고 당일 개선</h3><p class="blurb">문의·주문·재고·화면을 비교해 고객이 막히는 공통 조건을 특정하고, 전체 로직 변경 없이 필요한 정보를 노출하는 최소 개선안을 당일 반영했습니다.</p><div class="case-card-foot"><span class="summary">등록 당일 6~10건 → 반영 이후 0건 수준</span><span class="case-more">자세히 보기 →</span></div></button>
   </div>
 
@@ -112,10 +112,10 @@ footer{border-top:1px solid var(--line);padding:42px 0}.footer-inner{display:fle
 </div></section>
 
 <div class="modal-overlay" id="m1" onclick="closeOnOverlay(event,'m1')"><div class="modal-card">
-  <div class="modal-head"><div><div class="case-no">CASE 01 / 04</div><h2>고객 문의마다 건별 확인하던 400여 제휴사 정책을 재사용 가능한 운영 기준으로 전환</h2></div><div class="modal-nav"><button onclick="goTo('m1','m4')">←</button><button onclick="goTo('m1','m2')">→</button><button onclick="closeModal('m1')">✕</button></div></div>
+  <div class="modal-head"><div><div class="case-no">CASE 01 / 04</div><h2>400여 제휴사의 상이한 예약·취소·위약 정책을 공통 운영 기준으로 표준화</h2></div><div class="modal-nav"><button onclick="goTo('m1','m4')">←</button><button onclick="goTo('m1','m2')">→</button><button onclick="closeModal('m1')">✕</button></div></div>
   <div class="modal-body">
-    <div class="case-tags"><span class="case-tag">B2C 예약 고객</span><span class="case-tag">B2B 제휴 골프장</span><span class="case-tag">정책 표준화</span><span class="case-tag">변경 관리</span></div>
-    <div class="case-role"><b>내 역할</b> · 고객 예약·취소·위약 문의 직접 응대 · 골프장 예약실 건별 확인 · 400여 곳 어드민 전수 점검 · 공통 속성·조회 순서 정의 · 누락 정책 확인 · FAQ·온보딩 업데이트</div>
+    <div class="case-tags"><span class="case-tag">예약 운영</span><span class="case-tag">제휴 골프장</span><span class="case-tag">정책 표준화</span><span class="case-tag">변경 관리</span></div>
+    <div class="case-role"><b>내 역할</b> · 400여 곳 어드민 전수 점검 · 공통 속성·조회 순서 정의 · 골프장 예약실 건별 확인 · 누락 정책 보완 · FAQ·온보딩 업데이트 · 예약 문의 운영</div>
     <div class="case-block"><h4>문제</h4><p>고객이 예약·취소·위약·동반자 변경을 문의하면 해당 골프장 정책과 예약 상황을 건별로 확인해야 했습니다. 그러나 400여 제휴 골프장의 운영시간, 취소 기한, 위약 적용 범위, 동반자 제한 정보는 위치와 표현이 제각각이었고 일부는 누락되거나 모호했습니다. 고객 문의를 해결하는 과정에서 파트너 확인이 반복됐지만, 확인 결과가 동일한 방식으로 축적되지 않으면 담당자마다 검색 순서와 판단이 달라질 수 있었습니다.</p></div>
     <div class="case-block"><h4>판단과 실행</h4>
       <div class="step"><div class="step-badge">A</div><div class="step-body"><h5>고객 상황을 정리해 파트너에 건별 확인</h5>고객 예약 정보, 요청사항, 취소 시점과 필요한 조치를 먼저 정리한 뒤 해당 골프장 예약실에 직접 확인하고, 확인 결과와 가능한 다음 조치를 고객에게 안내했습니다.</div></div>
@@ -139,7 +139,7 @@ footer{border-top:1px solid var(--line);padding:42px 0}.footer-inner{display:fle
       <div class="step"><div class="step-badge">B</div><div class="step-body"><h5>후속 업무를 막는 데이터 공백 정의</h5>미출 리스트 미공유, 송장번호 미연결, 회원코드 미노출이 고객 안내·배송조회·보상 자료·재배송 처리에 미치는 영향을 정리해 관련 부서에 공유했습니다.</div></div>
       <div class="step"><div class="step-badge">C</div><div class="step-body"><h5>시스템 정상화 전 임시 운영</h5>송장 연결이 정상화되기 전에는 3PL 파트너의 운송장 파일을 가공해 배송조회 링크를 생성하고 개별 상태를 확인했습니다.</div></div>
       <div class="step"><div class="step-badge">D</div><div class="step-body"><h5>CRM 개선</h5>보상 대상 자료 가공 시 주문별 조회가 필요했던 문제를 공유하고, CRM 출고리스트에서 회원코드를 직접 확인하도록 개선을 요청해 반영을 확인했습니다.</div></div>
-      <div class="step"><div class="step-badge">E</div><div class="step-body"><h5>대량 처리 자동화</h5>Chrome Extension·Apps Script로 재배송·반품 등록 처리 단계를 7→1단계로 단축해, 전환 초기 재배송 1,151건을 처리하고 잔여 취소 대상과 처리 일정을 다시 산정했습니다. 이후 이 자동화를 반품 등록 전 건에 상시 적용했습니다.</div></div>
+      <div class="step"><div class="step-badge">E</div><div class="step-body"><h5>대량 처리 자동화</h5>Chrome Extension·Apps Script로 재배송 등록을 6→2단계로 단축해 전환 초기 재배송 1,151건을 처리하고, 잔여 취소 대상과 처리 일정을 다시 산정했습니다. 이후 반품 등록은 7→1단계로 단축해 도입 이후 발생한 반품 등록 전 건에 상시 적용했습니다.</div></div>
       <div class="step"><div class="step-badge">F</div><div class="step-body"><h5>반복 관리 지표 분리</h5>전환 초기 4,789건 진단과 별도로 월별 피해현황을 반복 관리 지표로 집계하고, 파트너 이의제기는 사유명이 아니라 실제 발생 원인·보유 사진·계약 책임 기준으로 건별 재검토했습니다.</div></div>
     </div>
     <div class="case-block"><h4>결과</h4><div class="result-box"><p>전환 초기 이슈 규모와 유형을 수치로 확인할 수 있게 했고, 시스템이 완전히 정상화되기 전에도 고객 안내와 후속 처리가 멈추지 않는 임시 운영방안을 마련했습니다. CRM 출고리스트에서 회원코드를 직접 확인할 수 있도록 개선했으며, 재배송 1,151건을 처리하고 이후 월별 피해현황을 같은 기준으로 추적할 수 있는 구조로 연결했습니다.</p></div></div>
@@ -190,7 +190,7 @@ footer{border-top:1px solid var(--line);padding:42px 0}.footer-inner{display:fle
     <div class="journey-row"><div class="label">03 개선 과제 연결</div><div class="value">교육·정책·상품 정보·시스템 문제를 구분해 담당 조직과 완료 기준을 맞춥니다.</div></div>
     <div class="journey-row"><div class="label">04 확장과 자동화</div><div class="value">반복 이슈와 처리시간을 운영 지표로 확인하고 다음 매장 도입에 재사용합니다.</div></div>
   </div>
-  <p class="connect-quote">예약 플랫폼에서 고객 문의마다 파트너 정책과 가능한 조치를 확인하고 400여 제휴사의 기준을 표준화했으며, 이커머스에서는 매장·고객·외부 파트너·본사 사이의 이슈 흐름을 정리했습니다. 플레이스앤의 예약·웨이팅·매장 솔루션 구조를 빠르게 익히고, 매장별 차이를 유지하면서도 확장 가능한 운영 기준으로 만들겠습니다.</p>
+  <p class="connect-quote">예약 플랫폼에서 400여 파트너의 운영 정책과 확인 기준을 표준화했고, 이커머스에서는 신규 물류 구조의 도입·안착, 매장 안내 기준, 데이터 공백과 반복 업무를 운영 기준·시스템 개선·자동화로 연결했습니다. 플레이스앤의 예약·웨이팅·매장 솔루션 구조를 빠르게 익히고, 매장별 차이를 유지하면서도 확장 가능한 운영 기준으로 만들겠습니다.</p>
 </div></section>
 
 <section id="automation"><div class="wrap">
